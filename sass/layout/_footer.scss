@@ -1,0 +1,34 @@
+.footer {
+    margin-top: 50px;
+    border-top: 1px solid #ccc;
+    font-size: 1.2rem;
+    background: #f7f7f7;
+
+    &__inner {
+        padding-top: 65px;
+    }
+
+    &__title {
+        color: #191919;
+        font-weight: 700;
+
+        &-2 {
+            margin-top: 35px;
+        }
+    }
+
+    &__link {
+        margin-top: 12px;
+        display: block;
+        color: #707070;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__social-media {
+        display: flex;
+        align-items: center;
+    }
+}

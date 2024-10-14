@@ -1,0 +1,135 @@
+.slider {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 1312px;
+    height: 330px;
+
+    color: #553b06;
+
+    &-pre,
+    &-next {
+        width: 32px;
+        height: 32px;
+        bottom: 50%;
+        background-color: white;
+        border-radius: 50%;
+        box-shadow: 0 2px 2px 0 #0000003d, 0 0 2px 0 #0000001f;
+        cursor: pointer;
+        position: absolute;
+        opacity: 0.92;
+    }
+
+    &-pre {
+        left: 0;
+        translate: -50%;
+        transform: rotate(-90deg);
+    }
+
+    &-next {
+        right: 0;
+        translate: 50%;
+        transform: rotate(90deg);
+    }
+
+    &-play,
+    &-pause {
+        background-color: white;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        position: absolute;
+        right: 25px;
+        bottom: 30px;
+    }
+
+    &-list {
+        display: flex;
+        overflow: hidden;
+        border-radius: 16px;
+        flex: 1;
+    }
+
+    &-item {
+        display: flex;
+        flex-shrink: 0;
+        background: rgb(238, 187, 4);
+
+        &:nth-of-type(2) {
+            background: red;
+            color: #2a0303;
+        }
+    }
+
+    &-link {
+        display: flex;
+    }
+
+    &__info {
+        margin: 32px;
+        width: 25%;
+    }
+
+    &__heading {
+        padding-top: 16px;
+        font-size: 3.6rem;
+        font-weight: 700;
+        line-height: 40px;
+    }
+
+    &__desc {
+        margin-top: 6px;
+        font-size: 1.7rem;
+        line-height: 22.1px;
+    }
+
+    &__btn {
+        margin-top: 32px;
+        margin-left: 0;
+        min-width: 112px;
+        font-size: 1.6rem;
+        border-radius: 24px;
+        border: 1px solid #363636;
+        transition: all 0.5s cubic-bezier(0.39, 0.5, 0.15, 1.36);
+
+        &:hover {
+            color: rgb(238, 187, 4);
+            border-color: rgb(85, 59, 6);
+            box-shadow: rgb(85, 59, 6) 0px 0px 0px 70px inset;
+        }
+    }
+
+    &__block {
+        display: inline-block;
+
+        width: 900px;
+    }
+
+    &__img {
+        display: block;
+
+        height: 330px;
+    }
+
+    &--no-translate {
+        margin-top: 62px;
+        color: #000;
+
+        .slider-item {
+            background: #f7f7f7;
+        }
+
+        .slider__btn {
+            color: rgb(25, 25, 25);
+            border-color: rgb(25, 25, 25);
+
+            &:hover {
+                color: rgb(247, 247, 247);
+                border-color: rgb(85, 59, 6);
+                box-shadow: rgb(25, 25, 25) 0px 0px 0px 70px inset;
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.popular-categories {
+    &__heading {
+        margin-top: 50px;
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+
+    &__list {
+        margin-top: 25px;
+    }
+
+    &__item {
+        text-align: center;
+
+        &:hover a {
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 10px;
+        }
+    }
+
+    &__img {
+        display: block;
+        width: 164px;
+        height: 164px;
+        border-radius: 50%;
+        background: #eaeaea;
+    }
+
+    &__title {
+        margin-top: 12px;
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+}
